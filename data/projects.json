@@ -1,0 +1,172 @@
+[
+  {
+    "id": "as-light-turns-into-day",
+    "title": "As Light Turns Into Day",
+    "year": "2024",
+    "medium": "Photography, CMY/K Process Separation Lightboxes, Installation",
+    "slug": "as-light-turns-into-day",
+    "coverImage": "/projects/as-light-turns-into-day/full/cover.jpg",
+    "thumbnailImage": "/projects/as-light-turns-into-day/thumb/cover.jpg",
+    "description": "This project examines light as humanity's first unit of measurement — an initial tool by which we began to order time and space. Through techniques like two-layer CMY/K process separation used in lightboxes, the work foregrounds the manipulation inherent to every image, shaping a narrative while making its artifice visible.",
+    "images": [
+      { "src": "/projects/as-light-turns-into-day/full/01.jpg", "thumb": "/projects/as-light-turns-into-day/thumb/01.jpg", "alt": "CMY/K process separation lightbox", "width": 1200, "height": 900 },
+      { "src": "/projects/as-light-turns-into-day/full/02.jpg", "thumb": "/projects/as-light-turns-into-day/thumb/02.jpg", "alt": "Layered transparency on light table", "width": 1200, "height": 900 },
+      { "src": "/projects/as-light-turns-into-day/full/03.jpg", "thumb": "/projects/as-light-turns-into-day/thumb/03.jpg", "alt": "Installation view with illuminated panels", "width": 1200, "height": 900 },
+      { "src": "/projects/as-light-turns-into-day/full/04.jpg", "thumb": "/projects/as-light-turns-into-day/thumb/04.jpg", "alt": "Detail of color separation layers", "width": 1200, "height": 900 },
+      { "src": "/projects/as-light-turns-into-day/full/05.jpg", "thumb": "/projects/as-light-turns-into-day/thumb/05.jpg", "alt": "Re-photographed print surface", "width": 1200, "height": 900 },
+      { "src": "/projects/as-light-turns-into-day/full/06.jpg", "thumb": "/projects/as-light-turns-into-day/thumb/06.jpg", "alt": "Exhibition installation at One River School", "width": 1200, "height": 900 }
+    ],
+    "tags": ["photography", "installation", "lightbox", "process"],
+    "order": 0,
+    "prev": null,
+    "next": "recalibration"
+  },
+  {
+    "id": "recalibration",
+    "title": "Recalibration",
+    "year": "2024",
+    "medium": "Photography",
+    "slug": "recalibration",
+    "coverImage": "/projects/recalibration/full/cover.jpg",
+    "thumbnailImage": "/projects/recalibration/thumb/cover.jpg",
+    "description": "Recalibration proposes a resetting of perceptual instruments — both mechanical and cognitive. The series traces moments where established systems of measurement and observation encounter their own limits, producing images that function less as documentation than as recalibrations of attention.",
+    "images": [
+      { "src": "/projects/recalibration/full/01.jpg", "thumb": "/projects/recalibration/thumb/01.jpg", "alt": "Geometric structure in natural light", "width": 1200, "height": 900 },
+      { "src": "/projects/recalibration/full/02.jpg", "thumb": "/projects/recalibration/thumb/02.jpg", "alt": "Measured surface with calibration marks", "width": 1200, "height": 900 },
+      { "src": "/projects/recalibration/full/03.jpg", "thumb": "/projects/recalibration/thumb/03.jpg", "alt": "Architectural grid against sky", "width": 1200, "height": 900 },
+      { "src": "/projects/recalibration/full/04.jpg", "thumb": "/projects/recalibration/thumb/04.jpg", "alt": "Industrial surface reflecting environment", "width": 1200, "height": 900 },
+      { "src": "/projects/recalibration/full/05.jpg", "thumb": "/projects/recalibration/thumb/05.jpg", "alt": "Layered exposure of repeated forms", "width": 1200, "height": 900 }
+    ],
+    "tags": ["photography"],
+    "order": 1,
+    "prev": "as-light-turns-into-day",
+    "next": "melted-plastic"
+  },
+  {
+    "id": "melted-plastic",
+    "title": "Melted Plastic",
+    "year": "2025",
+    "medium": "Photography, Material Investigation",
+    "slug": "melted-plastic",
+    "coverImage": "/projects/melted-plastic/full/cover.jpg",
+    "thumbnailImage": "/projects/melted-plastic/thumb/cover.jpg",
+    "description": "Melted Plastic follows the transformation of synthetic material under heat and pressure, tracing the point where industrial product returns to an undifferentiated state. The work treats plastic not as waste but as a medium whose deformation reveals the forces that shaped it.",
+    "images": [
+      { "src": "/projects/melted-plastic/full/01.jpg", "thumb": "/projects/melted-plastic/thumb/01.jpg", "alt": "Deformed plastic surface with light refractions", "width": 1200, "height": 900 },
+      { "src": "/projects/melted-plastic/full/02.jpg", "thumb": "/projects/melted-plastic/thumb/02.jpg", "alt": "Heat-warped material detail", "width": 1200, "height": 900 },
+      { "src": "/projects/melted-plastic/full/03.jpg", "thumb": "/projects/melted-plastic/thumb/03.jpg", "alt": "Translucent plastic layers under studio light", "width": 1200, "height": 900 },
+      { "src": "/projects/melted-plastic/full/04.jpg", "thumb": "/projects/melted-plastic/thumb/04.jpg", "alt": "Melted surface texture close-up", "width": 1200, "height": 900 },
+      { "src": "/projects/melted-plastic/full/05.jpg", "thumb": "/projects/melted-plastic/thumb/05.jpg", "alt": "Material transformation series", "width": 1200, "height": 900 }
+    ],
+    "tags": ["photography", "material"],
+    "order": 2,
+    "prev": "recalibration",
+    "next": "on-the-impossibility-of-a-unified-geodesy"
+  },
+  {
+    "id": "on-the-impossibility-of-a-unified-geodesy",
+    "title": "On the Impossibility of a Unified Geodesy",
+    "year": "2024",
+    "medium": "Photography, Installation, Research",
+    "slug": "on-the-impossibility-of-a-unified-geodesy",
+    "coverImage": "/projects/on-the-impossibility-of-a-unified-geodesy/full/cover.jpg",
+    "thumbnailImage": "/projects/on-the-impossibility-of-a-unified-geodesy/thumb/cover.jpg",
+    "description": "This capstone project examines the impossibility of representing the earth's surface through any single coordinate system. Drawing from the history of geodesy, the work interrogates the assumptions embedded in every map, survey, and satellite image.",
+    "images": [
+      { "src": "/projects/on-the-impossibility-of-a-unified-geodesy/full/01.jpg", "thumb": "/projects/on-the-impossibility-of-a-unified-geodesy/thumb/01.jpg", "alt": "Overlapping map projections", "width": 1200, "height": 900 },
+      { "src": "/projects/on-the-impossibility-of-a-unified-geodesy/full/02.jpg", "thumb": "/projects/on-the-impossibility-of-a-unified-geodesy/thumb/02.jpg", "alt": "Survey equipment in landscape", "width": 1200, "height": 900 },
+      { "src": "/projects/on-the-impossibility-of-a-unified-geodesy/full/03.jpg", "thumb": "/projects/on-the-impossibility-of-a-unified-geodesy/thumb/03.jpg", "alt": "Grid distortion study", "width": 1200, "height": 900 },
+      { "src": "/projects/on-the-impossibility-of-a-unified-geodesy/full/04.jpg", "thumb": "/projects/on-the-impossibility-of-a-unified-geodesy/thumb/04.jpg", "alt": "Satellite imagery reinterpretation", "width": 1200, "height": 900 },
+      { "src": "/projects/on-the-impossibility-of-a-unified-geodesy/full/05.jpg", "thumb": "/projects/on-the-impossibility-of-a-unified-geodesy/thumb/05.jpg", "alt": "Coordinate system visualization", "width": 1200, "height": 900 },
+      { "src": "/projects/on-the-impossibility-of-a-unified-geodesy/full/06.jpg", "thumb": "/projects/on-the-impossibility-of-a-unified-geodesy/thumb/06.jpg", "alt": "Installation view with projected maps", "width": 1200, "height": 900 }
+    ],
+    "tags": ["photography", "installation"],
+    "order": 3,
+    "prev": "melted-plastic",
+    "next": "content-in-place"
+  },
+  {
+    "id": "content-in-place",
+    "title": "Content in Place",
+    "year": "2024",
+    "medium": "Photography, Site-Specific Installation",
+    "slug": "content-in-place",
+    "coverImage": "/projects/content-in-place/full/cover.jpg",
+    "thumbnailImage": "/projects/content-in-place/thumb/cover.jpg",
+    "description": "Content in Place investigates how meaning shifts when images are returned to the sites that produced them. The work stages encounters between photographic reproductions and their originating environments, testing whether context can be restored once it has been extracted.",
+    "images": [
+      { "src": "/projects/content-in-place/full/01.jpg", "thumb": "/projects/content-in-place/thumb/01.jpg", "alt": "Site-specific installation in urban environment", "width": 1200, "height": 900 },
+      { "src": "/projects/content-in-place/full/02.jpg", "thumb": "/projects/content-in-place/thumb/02.jpg", "alt": "Photograph installed at original location", "width": 1200, "height": 900 },
+      { "src": "/projects/content-in-place/full/03.jpg", "thumb": "/projects/content-in-place/thumb/03.jpg", "alt": "Detail of print in environmental context", "width": 1200, "height": 900 },
+      { "src": "/projects/content-in-place/full/04.jpg", "thumb": "/projects/content-in-place/thumb/04.jpg", "alt": "Documentation of placed image and surroundings", "width": 1200, "height": 900 },
+      { "src": "/projects/content-in-place/full/05.jpg", "thumb": "/projects/content-in-place/thumb/05.jpg", "alt": "Installation responding to architectural space", "width": 1200, "height": 900 }
+    ],
+    "tags": ["photography", "installation"],
+    "order": 4,
+    "prev": "on-the-impossibility-of-a-unified-geodesy",
+    "next": "constant-energy"
+  },
+  {
+    "id": "constant-energy",
+    "title": "Constant Energy",
+    "year": "2023",
+    "medium": "Photography, Artist Book",
+    "slug": "constant-energy",
+    "coverImage": "/projects/constant-energy/full/cover.jpg",
+    "thumbnailImage": "/projects/constant-energy/thumb/cover.jpg",
+    "description": "Published as an artist book in 2023, Constant Energy traces the persistent forces that shape both landscape and infrastructure. The series follows energy in its various transfers — electrical, thermal, kinetic — as it moves through systems designed to contain and direct it.",
+    "images": [
+      { "src": "/projects/constant-energy/full/01.jpg", "thumb": "/projects/constant-energy/thumb/01.jpg", "alt": "Power infrastructure against open sky", "width": 1200, "height": 900 },
+      { "src": "/projects/constant-energy/full/02.jpg", "thumb": "/projects/constant-energy/thumb/02.jpg", "alt": "Electrical conduit surface detail", "width": 1200, "height": 900 },
+      { "src": "/projects/constant-energy/full/03.jpg", "thumb": "/projects/constant-energy/thumb/03.jpg", "alt": "Thermal gradient on industrial surface", "width": 1200, "height": 900 },
+      { "src": "/projects/constant-energy/full/04.jpg", "thumb": "/projects/constant-energy/thumb/04.jpg", "alt": "Energy transfer point between systems", "width": 1200, "height": 900 },
+      { "src": "/projects/constant-energy/full/05.jpg", "thumb": "/projects/constant-energy/thumb/05.jpg", "alt": "Artist book spread showing paired images", "width": 1200, "height": 900 }
+    ],
+    "tags": ["photography"],
+    "order": 5,
+    "prev": "content-in-place",
+    "next": "pseudo-data"
+  },
+  {
+    "id": "pseudo-data",
+    "title": "Pseudo-Data",
+    "year": "2023",
+    "medium": "Photography, Digital Process",
+    "slug": "pseudo-data",
+    "coverImage": "/projects/pseudo-data/full/cover.jpg",
+    "thumbnailImage": "/projects/pseudo-data/thumb/cover.jpg",
+    "description": "Pseudo-Data occupies the space between information and fabrication, producing images that adopt the visual language of empirical evidence while undermining its authority. The work generates photographic material that resembles data — measured, indexed, verifiable — but whose referents remain uncertain.",
+    "images": [
+      { "src": "/projects/pseudo-data/full/01.jpg", "thumb": "/projects/pseudo-data/thumb/01.jpg", "alt": "Data-like image with systematic grid overlay", "width": 1200, "height": 900 },
+      { "src": "/projects/pseudo-data/full/02.jpg", "thumb": "/projects/pseudo-data/thumb/02.jpg", "alt": "Indexed photographic surface", "width": 1200, "height": 900 },
+      { "src": "/projects/pseudo-data/full/03.jpg", "thumb": "/projects/pseudo-data/thumb/03.jpg", "alt": "Measured light recording", "width": 1200, "height": 900 },
+      { "src": "/projects/pseudo-data/full/04.jpg", "thumb": "/projects/pseudo-data/thumb/04.jpg", "alt": "Digital process artifact", "width": 1200, "height": 900 },
+      { "src": "/projects/pseudo-data/full/05.jpg", "thumb": "/projects/pseudo-data/thumb/05.jpg", "alt": "Fabricated evidence study", "width": 1200, "height": 900 }
+    ],
+    "tags": ["photography", "process"],
+    "order": 6,
+    "prev": "constant-energy",
+    "next": "confidence-threshold"
+  },
+  {
+    "id": "confidence-threshold",
+    "title": "Confidence Threshold",
+    "year": "2023",
+    "medium": "Photography",
+    "slug": "confidence-threshold",
+    "coverImage": "/projects/confidence-threshold/full/cover.jpg",
+    "thumbnailImage": "/projects/confidence-threshold/thumb/cover.jpg",
+    "description": "Confidence Threshold interrogates the point at which accumulated visual evidence becomes sufficient for belief. The work examines the mechanisms — statistical, perceptual, institutional — by which photographic images cross from uncertainty into accepted truth.",
+    "images": [
+      { "src": "/projects/confidence-threshold/full/01.jpg", "thumb": "/projects/confidence-threshold/thumb/01.jpg", "alt": "Threshold study with graduated tones", "width": 1200, "height": 900 },
+      { "src": "/projects/confidence-threshold/full/02.jpg", "thumb": "/projects/confidence-threshold/thumb/02.jpg", "alt": "Evidence accumulation series", "width": 1200, "height": 900 },
+      { "src": "/projects/confidence-threshold/full/03.jpg", "thumb": "/projects/confidence-threshold/thumb/03.jpg", "alt": "Perceptual boundary documentation", "width": 1200, "height": 900 },
+      { "src": "/projects/confidence-threshold/full/04.jpg", "thumb": "/projects/confidence-threshold/thumb/04.jpg", "alt": "Statistical visualization as photograph", "width": 1200, "height": 900 },
+      { "src": "/projects/confidence-threshold/full/05.jpg", "thumb": "/projects/confidence-threshold/thumb/05.jpg", "alt": "Institutional verification marks on surface", "width": 1200, "height": 900 }
+    ],
+    "tags": ["photography"],
+    "order": 7,
+    "prev": "pseudo-data",
+    "next": null
+  }
+]

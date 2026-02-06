@@ -1,0 +1,43 @@
+{
+  "education": [
+    {
+      "degree": "BFA Photography and New Media",
+      "institution": "School of the Art Institute of Chicago",
+      "years": "2021–2025"
+    }
+  ],
+  "soloExhibitions": [
+    { "title": "As Light Turns Into Day", "venue": "One River School", "year": "2025" },
+    { "title": "Melted Plastic", "venue": "SAIC Photo Department Solo Showcase", "year": "2025" },
+    { "title": "On The Precision Of Light", "venue": "Case Gallery", "year": "2025" }
+  ],
+  "groupExhibitions": [
+    { "title": "Blood and Stone", "venue": "The Night Gallery", "year": "2025" },
+    { "title": "ZineMercado", "venue": "Hairpin Arts Center", "year": "2025" },
+    { "title": "Bound Together", "venue": "Joan Flasch Artist Book Collection", "year": "2025" },
+    { "title": "Wavelengths", "venue": "Art On The Mart", "year": "2024" },
+    { "title": "Staple and Stitch Book Fair", "venue": "21c Museum Hotel", "year": "2024" },
+    { "title": "FotoMercado", "venue": "Chicago Art Department", "year": "2024" },
+    { "title": "SAIC Thesis Exhibition", "venue": "33 East Washington Galleries", "year": "2024" },
+    { "title": "Beyond The Ice Wall", "venue": "Benjamin Glass Studio", "year": "2024" },
+    { "title": "FotoMercado", "venue": "Chicago Art Department", "year": "2023" },
+    { "title": "Artbash", "venue": "LeRoy Neiman Center", "year": "2022" }
+  ],
+  "awards": [
+    { "title": "Latitude Chicago Artist Residency", "year": "2025" },
+    { "title": "SAIC Student Leadership Award", "year": "2025" },
+    { "title": "Fred Endsley Memorial Fellowship", "year": "2024" }
+  ],
+  "publications": [
+    { "title": "Test Strip", "year": "2023" },
+    { "title": "Constant Energy", "year": "2023" },
+    { "title": "SAIC Photo Catalog", "year": "2022" },
+    { "title": "New World", "year": "2021" }
+  ],
+  "speaking": [
+    { "title": "Center For Teaching And Learning Panel On AI in Education", "year": "2025" },
+    { "title": "Photoclub Thesis Process Presentation", "year": "2025" },
+    { "title": "SAIC Advanced Black And White Class Visit/Lecture", "year": "2024" },
+    { "title": "On the Impossibility Of A Unified Geodesy Capstone Lecture", "year": "2024" }
+  ]
+}

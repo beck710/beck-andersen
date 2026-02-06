@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melted Plastic — Beck Andersen</title>
+  <meta name="description" content="Melted Plastic follows the transformation of synthetic material under heat and pressure, tracing the point where industrial product returns to an undifferentiated state.">
+  <meta property="og:title" content="Melted Plastic — Beck Andersen">
+  <meta property="og:description" content="Photography, Material Investigation — 2025">
+  <meta property="og:image" content="https://cdn.beckandersen.com/projects/melted-plastic/full/cover.jpg">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a class="site-nav__name" href="/">beck andersen</a>
+    <button class="site-nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+      <span class="site-nav__toggle-icon"></span>
+    </button>
+    <div class="site-nav__links" id="nav-links">
+      <a href="/" class="active">work</a>
+      <a href="/gallery.html">gallery</a>
+      <a href="/point-clouds.html">point clouds</a>
+      <a href="/about.html">about</a>
+    </div>
+  </nav>
+
+  <main class="project-page">
+    <header class="project-page__header">
+      <h1 class="project-page__title">Melted Plastic</h1>
+      <p class="project-page__year">2025</p>
+      <p class="project-page__medium">Photography, Material Investigation</p>
+    </header>
+
+    <div class="project-page__description">
+      <p>Melted Plastic follows the transformation of synthetic material under heat and pressure, tracing the point where industrial product returns to an undifferentiated state. The work treats plastic not as waste but as a medium whose deformation reveals the forces that shaped it — manufacturing processes made legible through their undoing. Each image holds the tension between what the material was designed to be and what it becomes when those designs are released.</p>
+    </div>
+
+    <div class="project-page__images">
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/melted-plastic/thumb/01.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/melted-plastic/full/01.jpg"
+             alt="Deformed plastic surface with light refractions"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/melted-plastic/thumb/02.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/melted-plastic/full/02.jpg"
+             alt="Heat-warped material detail"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/melted-plastic/thumb/03.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/melted-plastic/full/03.jpg"
+             alt="Translucent plastic layers under studio light"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/melted-plastic/thumb/04.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/melted-plastic/full/04.jpg"
+             alt="Melted surface texture close-up"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/melted-plastic/thumb/05.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/melted-plastic/full/05.jpg"
+             alt="Material transformation series"
+             width="1200" height="900" loading="lazy">
+      </div>
+    </div>
+
+    <nav class="project-page__nav" aria-label="Project navigation"
+         data-prev-project="/projects/recalibration.html"
+         data-next-project="/projects/on-the-impossibility-of-a-unified-geodesy.html">
+      <a href="/projects/recalibration.html">&larr; Recalibration</a>
+      <a href="/projects/on-the-impossibility-of-a-unified-geodesy.html">On the Impossibility of a Unified Geodesy &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="mailto:contact@beckandersen.com">email</a>
+      <a href="https://instagram.com/beckandersen" target="_blank" rel="noopener noreferrer">instagram</a>
+    </div>
+    <p>&copy; 2025 Beck Andersen</p>
+  </footer>
+
+  <script>
+    document.querySelector('.site-nav__toggle')?.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      document.getElementById('nav-links').classList.toggle('is-open');
+    });
+  </script>
+  <script type="module" src="/js/image-loader.js"></script>
+  <script type="module" src="/js/project-template.js"></script>
+</body>
+</html>

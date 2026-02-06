@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Beck Andersen</title>
+  <meta name="description" content="Image gallery with AI-powered search. Photography, installation, and new media work by Beck Andersen.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gallery — Beck Andersen">
+  <meta property="og:description" content="Image gallery with AI-powered search.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://beckandersen.com/gallery.html">
+  <meta property="og:image" content="https://cdn.beckandersen.com/projects/as-light-turns-into-day/full/cover.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery — Beck Andersen">
+  <meta name="twitter:description" content="Image gallery with AI-powered search.">
+
+  <link rel="canonical" href="https://beckandersen.com/gallery.html">
+
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a class="site-nav__name" href="/">beck andersen</a>
+    <button class="site-nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+      <span class="site-nav__toggle-icon"></span>
+    </button>
+    <div class="site-nav__links" id="nav-links">
+      <a href="/">work</a>
+      <a href="/gallery.html" class="active">gallery</a>
+      <a href="/point-clouds.html">point clouds</a>
+      <a href="/about.html">about</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="gallery-page">
+    <div class="container">
+
+      <!-- Controls: Search + Filters -->
+      <div class="gallery-page__controls">
+        <div class="gallery-page__search">
+          <label for="gallery-search" class="sr-only">Search images</label>
+          <input type="search"
+                 id="gallery-search"
+                 class="search-input"
+                 placeholder="search images..."
+                 autocomplete="off">
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter by tag">
+          <button class="filter-bar__tag filter-bar__tag--active"
+                  data-tag="all" role="tab" aria-selected="true">all</button>
+          <button class="filter-bar__tag"
+                  data-tag="photography" role="tab" aria-selected="false">photography</button>
+          <button class="filter-bar__tag"
+                  data-tag="installation" role="tab" aria-selected="false">installation</button>
+          <button class="filter-bar__tag"
+                  data-tag="lightbox" role="tab" aria-selected="false">lightbox</button>
+          <button class="filter-bar__tag"
+                  data-tag="collage" role="tab" aria-selected="false">collage</button>
+          <button class="filter-bar__tag"
+                  data-tag="landscape" role="tab" aria-selected="false">landscape</button>
+          <button class="filter-bar__tag"
+                  data-tag="material" role="tab" aria-selected="false">material</button>
+          <button class="filter-bar__tag"
+                  data-tag="process" role="tab" aria-selected="false">process</button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid (Masonry via CSS columns) -->
+      <div class="gallery-grid" id="gallery-grid">
+
+        <div class="gallery-item" data-image-id="gallery-001" data-tags="photography,lightbox">
+          <div class="image-container">
+            <img class="image-container__thumb"
+                 src="https://cdn.beckandersen.com/gallery/thumb/001.jpg"
+                 alt="" aria-hidden="true" width="40" height="30">
+            <img class="image-container__full"
+                 data-src="/gallery/full/001.jpg"
+                 alt="CMY/K process separation lightbox detail"
+                 width="1200" height="900" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-item" data-image-id="gallery-002" data-tags="photography,landscape">
+          <div class="image-container">
+            <img class="image-container__thumb"
+                 src="https://cdn.beckandersen.com/gallery/thumb/002.jpg"
+                 alt="" aria-hidden="true" width="40" height="30">
+            <img class="image-container__full"
+                 data-src="/gallery/full/002.jpg"
+                 alt="Forest bisected by infrastructure"
+                 width="1200" height="1600" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-item" data-image-id="gallery-003" data-tags="installation,process">
+          <div class="image-container">
+            <img class="image-container__thumb"
+                 src="https://cdn.beckandersen.com/gallery/thumb/003.jpg"
+                 alt="" aria-hidden="true" width="40" height="30">
+            <img class="image-container__full"
+                 data-src="/gallery/full/003.jpg"
+                 alt="Installation view with illuminated panels"
+                 width="1200" height="800" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-item" data-image-id="gallery-004" data-tags="photography,material">
+          <div class="image-container">
+            <img class="image-container__thumb"
+                 src="https://cdn.beckandersen.com/gallery/thumb/004.jpg"
+                 alt="" aria-hidden="true" width="40" height="30">
+            <img class="image-container__full"
+                 data-src="/gallery/full/004.jpg"
+                 alt="Melted plastic surface under studio light"
+                 width="1200" height="1200" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-item" data-image-id="gallery-005" data-tags="photography,landscape">
+          <div class="image-container">
+            <img class="image-container__thumb"
+                 src="https://cdn.beckandersen.com/gallery/thumb/005.jpg"
+                 alt="" aria-hidden="true" width="40" height="30">
+            <img class="image-container__full"
+                 data-src="/gallery/full/005.jpg"
+                 alt="Light caught within industrial grid"
+                 width="1200" height="900" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-item" data-image-id="gallery-006" data-tags="collage,process">
+          <div class="image-container">
+            <img class="image-container__thumb"
+                 src="https://cdn.beckandersen.com/gallery/thumb/006.jpg"
+                 alt="" aria-hidden="true" width="40" height="30">
+            <img class="image-container__full"
+                 data-src="/gallery/full/006.jpg"
+                 alt="Re-photographed collage layers"
+                 width="1200" height="1500" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-item" data-image-id="gallery-007" data-tags="photography,lightbox">
+          <div class="image-container">
+            <img class="image-container__thumb"
+                 src="https://cdn.beckandersen.com/gallery/thumb/007.jpg"
+                 alt="" aria-hidden="true" width="40" height="30">
+            <img class="image-container__full"
+                 data-src="/gallery/full/007.jpg"
+                 alt="Color separation transparency on light table"
+                 width="1200" height="900" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-item" data-image-id="gallery-008" data-tags="installation">
+          <div class="image-container">
+            <img class="image-container__thumb"
+                 src="https://cdn.beckandersen.com/gallery/thumb/008.jpg"
+                 alt="" aria-hidden="true" width="40" height="30">
+            <img class="image-container__full"
+                 data-src="/gallery/full/008.jpg"
+                 alt="Exhibition installation documentation"
+                 width="1200" height="800" loading="lazy">
+          </div>
+        </div>
+
+        <div class="gallery-item" data-image-id="gallery-009" data-tags="photography,material">
+          <div class="image-container">
+            <img class="image-container__thumb"
+                 src="https://cdn.beckandersen.com/gallery/thumb/009.jpg"
+                 alt="" aria-hidden="true" width="40" height="30">
+            <img class="image-container__full"
+                 data-src="/gallery/full/009.jpg"
+                 alt="Surface marked by erosion and growth"
+                 width="1200" height="1200" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Empty state -->
+      <div class="gallery-page__empty" style="display: none;">
+        <p>No images match your search.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="mailto:contact@beckandersen.com">email</a>
+      <a href="https://instagram.com/beckandersen" target="_blank" rel="noopener noreferrer">instagram</a>
+    </div>
+    <p>&copy; 2025 Beck Andersen</p>
+  </footer>
+
+  <!-- Navigation toggle -->
+  <script>
+    document.querySelector('.site-nav__toggle')?.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      document.getElementById('nav-links').classList.toggle('is-open');
+    });
+  </script>
+
+  <script type="module" src="/js/image-loader.js"></script>
+  <script type="module" src="/js/gallery.js"></script>
+</body>
+</html>

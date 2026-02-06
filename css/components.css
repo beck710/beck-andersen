@@ -1,0 +1,434 @@
+/* ==========================================================================
+   Components — Reusable UI elements
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Navigation
+   -------------------------------------------------------------------------- */
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--content-padding);
+  background: var(--color-nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: var(--z-nav);
+  transition: background var(--transition-normal);
+}
+
+.site-nav__name {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: lowercase;
+  color: var(--color-text);
+}
+
+.site-nav__name:hover {
+  color: var(--color-text);
+}
+
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.site-nav__links a {
+  font-size: var(--font-size-caption);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: lowercase;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.site-nav__links a:hover,
+.site-nav__links a.active {
+  color: var(--color-text);
+}
+
+/* Mobile hamburger */
+.site-nav__toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+  color: var(--color-text);
+}
+
+.site-nav__toggle-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  position: relative;
+  transition: background var(--transition-fast);
+}
+
+.site-nav__toggle-icon::before,
+.site-nav__toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transition: transform var(--transition-normal);
+}
+
+.site-nav__toggle-icon::before { top: -6px; }
+.site-nav__toggle-icon::after { top: 6px; }
+
+/* Hamburger open state */
+.site-nav__toggle[aria-expanded="true"] .site-nav__toggle-icon {
+  background: transparent;
+}
+
+.site-nav__toggle[aria-expanded="true"] .site-nav__toggle-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.site-nav__toggle[aria-expanded="true"] .site-nav__toggle-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Dark nav variant (point-clouds page) */
+.site-nav--dark {
+  background: var(--color-nav-bg-dark);
+}
+
+.site-nav--dark .site-nav__name {
+  color: var(--color-text-dark);
+}
+
+.site-nav--dark .site-nav__links a {
+  color: var(--color-text-secondary-dark);
+}
+
+.site-nav--dark .site-nav__links a:hover,
+.site-nav--dark .site-nav__links a.active {
+  color: var(--color-text-dark);
+}
+
+.site-nav--dark .site-nav__toggle {
+  color: var(--color-text-dark);
+}
+
+@media (max-width: 640px) {
+  .site-nav__toggle {
+    display: block;
+  }
+
+  .site-nav__links {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: var(--space-md) var(--content-padding) var(--space-lg);
+    background: var(--color-nav-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .site-nav__links.is-open {
+    display: flex;
+  }
+
+  .site-nav__links a {
+    padding: var(--space-sm) 0;
+    font-size: var(--font-size-small);
+  }
+
+  .site-nav--dark .site-nav__links {
+    background: var(--color-nav-bg-dark);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+.site-footer {
+  padding: var(--space-xl) var(--content-padding) var(--space-lg);
+  text-align: center;
+  font-size: var(--font-size-caption);
+  color: var(--color-text-secondary);
+}
+
+.site-footer a {
+  color: var(--color-text-secondary);
+}
+
+.site-footer a:hover {
+  color: var(--color-text);
+}
+
+.site-footer__links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Project Grid (Home page)
+   -------------------------------------------------------------------------- */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--image-gap);
+}
+
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Project Card
+   -------------------------------------------------------------------------- */
+
+.project-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--color-border);
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-md);
+  background: var(--color-overlay);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.project-card:hover .project-card__overlay,
+.project-card:focus-visible .project-card__overlay {
+  opacity: 1;
+}
+
+.project-card__title {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+  color: #ffffff;
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: lowercase;
+}
+
+.project-card__year {
+  font-size: var(--font-size-caption);
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: var(--space-xs);
+}
+
+/* --------------------------------------------------------------------------
+   Image Container (Progressive Loading)
+   -------------------------------------------------------------------------- */
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.image-container__thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(20px);
+  transform: scale(1.1);
+  transition: opacity var(--image-crossfade);
+}
+
+.image-container__full {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity var(--image-crossfade);
+}
+
+.image-container--loaded .image-container__thumb {
+  opacity: 0;
+}
+
+.image-container--loaded .image-container__full {
+  opacity: 1;
+}
+
+/* Aspect ratio placeholder when dimensions are known */
+.image-container[data-ratio] {
+  aspect-ratio: attr(data-ratio);
+}
+
+/* --------------------------------------------------------------------------
+   Filter Bar (Gallery)
+   -------------------------------------------------------------------------- */
+
+.filter-bar {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  padding-bottom: var(--space-sm);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-bar__tag {
+  flex-shrink: 0;
+  padding: var(--space-xs) var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--font-size-caption);
+  letter-spacing: var(--letter-spacing-caps);
+  text-transform: lowercase;
+  color: var(--color-text-secondary);
+  background: none;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.filter-bar__tag:hover {
+  color: var(--color-text);
+  border-color: var(--color-text);
+}
+
+.filter-bar__tag--active {
+  color: var(--color-bg);
+  background: var(--color-text);
+  border-color: var(--color-text);
+}
+
+/* --------------------------------------------------------------------------
+   Search Input
+   -------------------------------------------------------------------------- */
+
+.search-input {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--font-size-small);
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  transition: border-color var(--transition-fast);
+}
+
+.search-input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-text);
+}
+
+/* --------------------------------------------------------------------------
+   Scroll Progress Bar
+   -------------------------------------------------------------------------- */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--color-accent);
+  z-index: calc(var(--z-nav) + 1);
+  transition: none;
+}
+
+/* --------------------------------------------------------------------------
+   Loading Bar
+   -------------------------------------------------------------------------- */
+
+.loading-bar {
+  width: 200px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: var(--space-sm);
+}
+
+.loading-bar__fill {
+  height: 100%;
+  width: 0;
+  background: #ffffff;
+  transition: width var(--transition-fast);
+}
+
+/* --------------------------------------------------------------------------
+   Controls Panel (Point Clouds)
+   -------------------------------------------------------------------------- */
+
+.controls-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--color-text-dark);
+  font-size: var(--font-size-caption);
+}
+
+.controls-panel label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.controls-panel input[type="range"] {
+  width: 120px;
+  accent-color: #ffffff;
+}
+
+.controls-panel select {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-dark);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: var(--space-xs) var(--space-sm);
+  font-family: var(--font-body);
+  font-size: var(--font-size-caption);
+}

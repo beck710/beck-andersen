@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Design Tokens — All customizable values live here.
+   Change these to restyle the entire site.
+   ========================================================================== */
+
+:root {
+  /* COLORS */
+  --color-bg: #fafafa;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #666666;
+  --color-accent: #000000;
+  --color-border: #e0e0e0;
+  --color-hover: #333333;
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-nav-bg: rgba(250, 250, 250, 0.95);
+
+  /* TYPOGRAPHY */
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono', monospace;
+
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-caption: 12px;
+  --font-size-h1: 28px;
+  --font-size-h2: 22px;
+  --font-size-h3: 18px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+
+  --line-height-body: 1.6;
+  --line-height-heading: 1.2;
+  --letter-spacing-body: 0;
+  --letter-spacing-heading: -0.01em;
+  --letter-spacing-caps: 0.08em;
+
+  /* SPACING */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+  --space-2xl: 128px;
+
+  /* LAYOUT */
+  --content-max-width: 1200px;
+  --content-narrow: 800px;
+  --content-padding: 24px;
+  --nav-height: 60px;
+
+  /* IMAGES */
+  --image-gap: 16px;
+  --image-border-radius: 0;
+
+  /* TRANSITIONS */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+  --transition-slow: 500ms ease;
+  --image-crossfade: 400ms ease-in-out;
+
+  /* Z-INDEX */
+  --z-nav: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+
+  /* DARK THEME (point-clouds page) */
+  --color-bg-dark: #0a0a0a;
+  --color-text-dark: #e5e5e5;
+  --color-text-secondary-dark: #999999;
+  --color-nav-bg-dark: rgba(10, 10, 10, 0.95);
+  --color-border-dark: #333333;
+}

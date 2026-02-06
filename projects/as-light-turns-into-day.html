@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As Light Turns Into Day — Beck Andersen</title>
+  <meta name="description" content="This project examines light as humanity's first unit of measurement — an initial tool by which we began to order time and space.">
+  <meta property="og:title" content="As Light Turns Into Day — Beck Andersen">
+  <meta property="og:description" content="Photography, CMY/K Process Separation Lightboxes, Installation — 2024–present">
+  <meta property="og:image" content="https://cdn.beckandersen.com/projects/as-light-turns-into-day/full/cover.jpg">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a class="site-nav__name" href="/">beck andersen</a>
+    <button class="site-nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+      <span class="site-nav__toggle-icon"></span>
+    </button>
+    <div class="site-nav__links" id="nav-links">
+      <a href="/" class="active">work</a>
+      <a href="/gallery.html">gallery</a>
+      <a href="/point-clouds.html">point clouds</a>
+      <a href="/about.html">about</a>
+    </div>
+  </nav>
+
+  <main class="project-page">
+    <header class="project-page__header">
+      <h1 class="project-page__title">As Light Turns Into Day</h1>
+      <p class="project-page__year">2024–present</p>
+      <p class="project-page__medium">Photography, CMY/K Process Separation Lightboxes, Installation</p>
+    </header>
+
+    <div class="project-page__description">
+      <p>This project examines light as humanity's first unit of measurement — an initial tool by which we began to order time and space. Through techniques like two-layer CMY/K process separation used in lightboxes, the work foregrounds the manipulation inherent to every image, shaping a narrative while making its artifice visible. The images shift from source material to artifacts in their own right, transforming the processes of printing, collaging, and re-photographing into acts of truth-making rather than truth-finding.</p>
+    </div>
+
+    <div class="project-page__images">
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/as-light-turns-into-day/thumb/01.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/as-light-turns-into-day/full/01.jpg"
+             alt="CMY/K process separation lightbox"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/as-light-turns-into-day/thumb/02.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/as-light-turns-into-day/full/02.jpg"
+             alt="Layered transparency on light table"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/as-light-turns-into-day/thumb/03.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/as-light-turns-into-day/full/03.jpg"
+             alt="Installation view with illuminated panels"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/as-light-turns-into-day/thumb/04.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/as-light-turns-into-day/full/04.jpg"
+             alt="Detail of color separation layers"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/as-light-turns-into-day/thumb/05.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/as-light-turns-into-day/full/05.jpg"
+             alt="Re-photographed print surface"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/as-light-turns-into-day/thumb/06.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/as-light-turns-into-day/full/06.jpg"
+             alt="Exhibition installation at One River School"
+             width="1200" height="900" loading="lazy">
+      </div>
+    </div>
+
+    <nav class="project-page__nav" aria-label="Project navigation"
+         data-next-project="/projects/recalibration.html">
+      <a href="/projects/recalibration.html">Recalibration &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="mailto:contact@beckandersen.com">email</a>
+      <a href="https://instagram.com/beckandersen" target="_blank" rel="noopener noreferrer">instagram</a>
+    </div>
+    <p>&copy; 2025 Beck Andersen</p>
+  </footer>
+
+  <script>
+    document.querySelector('.site-nav__toggle')?.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      document.getElementById('nav-links').classList.toggle('is-open');
+    });
+  </script>
+  <script type="module" src="/js/image-loader.js"></script>
+  <script type="module" src="/js/project-template.js"></script>
+</body>
+</html>

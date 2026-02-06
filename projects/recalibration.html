@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recalibration — Beck Andersen</title>
+  <meta name="description" content="Recalibration proposes a resetting of perceptual instruments — both mechanical and cognitive.">
+  <meta property="og:title" content="Recalibration — Beck Andersen">
+  <meta property="og:description" content="Photography — 2024">
+  <meta property="og:image" content="https://cdn.beckandersen.com/projects/recalibration/full/cover.jpg">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/pages.css">
+</head>
+<body>
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <a class="site-nav__name" href="/">beck andersen</a>
+    <button class="site-nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+      <span class="site-nav__toggle-icon"></span>
+    </button>
+    <div class="site-nav__links" id="nav-links">
+      <a href="/" class="active">work</a>
+      <a href="/gallery.html">gallery</a>
+      <a href="/point-clouds.html">point clouds</a>
+      <a href="/about.html">about</a>
+    </div>
+  </nav>
+
+  <main class="project-page">
+    <header class="project-page__header">
+      <h1 class="project-page__title">Recalibration</h1>
+      <p class="project-page__year">2024</p>
+      <p class="project-page__medium">Photography</p>
+    </header>
+
+    <div class="project-page__description">
+      <p>Recalibration proposes a resetting of perceptual instruments — both mechanical and cognitive. The series traces moments where established systems of measurement and observation encounter their own limits, producing images that function less as documentation than as recalibrations of attention. Each photograph suspends the viewer between what is seen and what is assumed, asking how we might look again at structures we have already agreed to understand.</p>
+    </div>
+
+    <div class="project-page__images">
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/recalibration/thumb/01.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/recalibration/full/01.jpg"
+             alt="Geometric structure in natural light"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/recalibration/thumb/02.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/recalibration/full/02.jpg"
+             alt="Measured surface with calibration marks"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/recalibration/thumb/03.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/recalibration/full/03.jpg"
+             alt="Architectural grid against sky"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/recalibration/thumb/04.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/recalibration/full/04.jpg"
+             alt="Industrial surface reflecting environment"
+             width="1200" height="900" loading="lazy">
+      </div>
+
+      <div class="image-container">
+        <img class="image-container__thumb"
+             src="https://cdn.beckandersen.com/projects/recalibration/thumb/05.jpg"
+             alt="" aria-hidden="true" width="40" height="30">
+        <img class="image-container__full"
+             data-src="/projects/recalibration/full/05.jpg"
+             alt="Layered exposure of repeated forms"
+             width="1200" height="900" loading="lazy">
+      </div>
+    </div>
+
+    <nav class="project-page__nav" aria-label="Project navigation"
+         data-prev-project="/projects/as-light-turns-into-day.html"
+         data-next-project="/projects/melted-plastic.html">
+      <a href="/projects/as-light-turns-into-day.html">&larr; As Light Turns Into Day</a>
+      <a href="/projects/melted-plastic.html">Melted Plastic &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="mailto:contact@beckandersen.com">email</a>
+      <a href="https://instagram.com/beckandersen" target="_blank" rel="noopener noreferrer">instagram</a>
+    </div>
+    <p>&copy; 2025 Beck Andersen</p>
+  </footer>
+
+  <script>
+    document.querySelector('.site-nav__toggle')?.addEventListener('click', function() {
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      document.getElementById('nav-links').classList.toggle('is-open');
+    });
+  </script>
+  <script type="module" src="/js/image-loader.js"></script>
+  <script type="module" src="/js/project-template.js"></script>
+</body>
+</html>
