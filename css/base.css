@@ -2,8 +2,6 @@
    Base — Reset, typography, layout primitives
    ========================================================================== */
 
-@import url('variables.css');
-
 /* Reset */
 *, *::before, *::after {
   box-sizing: border-box;

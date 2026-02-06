@@ -19,10 +19,10 @@
 
   <link rel="canonical" href="https://beckandersen.com/point-clouds.html">
 
-  <link rel="stylesheet" href="/css/variables.css">
-  <link rel="stylesheet" href="/css/base.css">
-  <link rel="stylesheet" href="/css/components.css">
-  <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
 
   <!-- Three.js import map -->
   <script type="importmap">
@@ -37,15 +37,15 @@
 <body class="point-clouds-page">
   <!-- Navigation (dark variant) -->
   <nav class="site-nav site-nav--dark" role="navigation" aria-label="Main navigation">
-    <a class="site-nav__name" href="/">beck andersen</a>
+    <a class="site-nav__name" href="index.html">beck andersen</a>
     <button class="site-nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
       <span class="site-nav__toggle-icon"></span>
     </button>
     <div class="site-nav__links" id="nav-links">
-      <a href="/">work</a>
-      <a href="/gallery.html">gallery</a>
-      <a href="/point-clouds.html" class="active">point clouds</a>
-      <a href="/about.html">about</a>
+      <a href="index.html">work</a>
+      <a href="gallery.html">gallery</a>
+      <a href="point-clouds.html" class="active">point clouds</a>
+      <a href="about.html">about</a>
     </div>
   </nav>
 
@@ -132,7 +132,7 @@
 
   <!-- Point Cloud Viewer initialization -->
   <script type="module">
-    import PointCloudViewer from '/js/point-cloud-viewer.js';
+    import PointCloudViewer from './js/point-cloud-viewer.js';
 
     const container = document.getElementById('viewer-container');
     const loadingIndicator = document.getElementById('loading-indicator');
