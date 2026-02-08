@@ -24,8 +24,9 @@ class ProjectPage {
     const nextUrl = this.nav.dataset.nextProject;
 
     document.addEventListener('keydown', (e) => {
-      // Don't navigate if user is typing in an input
+      // Don't navigate if user is typing in an input or lightbox is open
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (document.querySelector('.lightbox--open')) return;
 
       if (e.key === 'ArrowLeft' && prevUrl) {
         window.location.href = prevUrl;
